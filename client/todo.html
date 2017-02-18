@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./stylesheet/style.css">
+  <script src="./javascript/script.js"></script>
+  <title>TODOs</title>
+</head>
+<body>
+  <div class="container">
+    <h1>TODO</h1>
+    <form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">TaskID</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="task_id" placeholder="task id">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Task</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="task" placeholder="task">
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div id="buttonUpdate" class="col-sm-offset-2 col-sm-10">
+        <button type="button" id="post" class="btn btn-default" onclick="create_task()">Create</button>
+      </div>
+    </div>
+  </form>
+</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <td>TaskID</td>
+        <td>Task</td>
+        <td>Status</td>
+        <td>Created Date</td>
+        <td>Updated Date</td>
+      </tr>
+    </thead>
+    <tbody id="list_task">
+
+    </tbody>
+  </table>
+</body>
+
+</html>
